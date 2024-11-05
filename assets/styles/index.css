@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Allura_Regular";
+  src: url(../../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins_Medium";
+  src: url(../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto_Light";
+  src: url(../../assets/fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.76);
+  color: white;
+  font-family: Roboto_Light, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 25px;
+  font-size: 1.08rem;
+}
+
+header {
+  background: url(../../../assets/img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+}
+header nav {
+  height: 10%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+  justify-content: center;
+}
+header nav h4 {
+  font-family: Allura_Regular, sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+header nav .nav-left {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Roboto_Light, sans-serif;
+}
+header nav .nav-left li {
+  padding: 30px 16px;
+}
+header nav .nav-left li:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+header nav .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav .nav-right li:hover {
+  cursor: pointer;
+  color: blue;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,60 @@
+header {
+    background: url(../../../assets/img/bg-slider-06.jpg) center/cover;
+    height: 100vh;
+
+    nav {
+        height: 10%;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            // text-align: center;
+            @include title1;
+            font-size: 2rem;
+            padding: 20px 0;
+        }
+
+        ul {}
+
+        .nav-left {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+
+            @include title;
+            font-family: $font3;
+
+            li {
+                // height: 100%;
+                padding: 30px 16px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $black;
+                    background: $white ;
+                }
+            }
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            li {
+
+                &:hover {
+                    cursor: pointer;
+                    color: blue
+                }
+            }
+        }
+    }
+}
