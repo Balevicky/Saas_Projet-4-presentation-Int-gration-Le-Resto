@@ -28,6 +28,11 @@ $font3: Roboto_Light, sans-serif;
     font-family: $font1;
     letter-spacing: 2px;
 }
+@mixin centerchild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 $color1: rgba(231, 179, 65, 0.24);
 $color2: rgba(245, 170, 8, 0.685);

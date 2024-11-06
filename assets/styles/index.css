@@ -40,7 +40,7 @@ header nav {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 10% 80% 10%;
   align-items: center;
   justify-content: center;
 }
@@ -51,11 +51,9 @@ header nav h4 {
   padding: 20px 0;
 }
 header nav .nav-left {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100%;
   font-family: Poppins_Medium, sans-serif;
   text-transform: uppercase;
@@ -63,7 +61,10 @@ header nav .nav-left {
   font-family: Roboto_Light, sans-serif;
 }
 header nav .nav-left li {
-  padding: 30px 16px;
+  padding: 30px 10px;
+}
+header nav .nav-left li:nth-child(2), header nav .nav-left li:nth-child(7) {
+  text-align: center;
 }
 header nav .nav-left li:hover {
   cursor: pointer;
@@ -78,4 +79,97 @@ header nav .nav-right {
 header nav .nav-right li:hover {
   cursor: pointer;
   color: blue;
+}
+header h3 {
+  font-family: Allura_Regular, sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 125px 0 0;
+  color: rgba(245, 170, 8, 0.685);
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+header h1 {
+  font-family: Poppins_Medium, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 10;
+}
+header img {
+  position: relative;
+  left: 48%;
+  padding: 20px;
+}
+header p {
+  text-align: center;
+  padding: 0px;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  font-weight: 10;
+}
+
+main .section-1 {
+  height: 430px;
+  max-height: 450px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 40px;
+  background: rgba(247, 244, 244, 0.966);
+}
+main .section-1 .section-1-left {
+  padding: 10px;
+  height: 100%;
+}
+main .section-1 .section-1-left .section-1-left-container {
+  height: 100%;
+  border: 3px dotted rgba(231, 179, 65, 0.24);
+  color: black;
+  text-align: center;
+}
+main .section-1 .section-1-left .section-1-left-container .disco-mini {
+  padding-top: 10px;
+  color: rgba(245, 170, 8, 0.685);
+  font-family: Allura_Regular, sans-serif;
+  font-size: 2rem;
+}
+main .section-1 .section-1-left .section-1-left-container .our-store-mini {
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px;
+  bottom: 35px;
+  position: relative;
+}
+main .section-1 .section-1-left .section-1-left-container div {
+  bottom: 35px;
+  position: relative;
+}
+main .section-1 .section-1-left .section-1-left-container div p {
+  margin: 10px 0;
+}
+main .section-1 .section-1-left .section-1-left-container div #imgplate {
+  width: 100px;
+  height: 100px;
+  border: 1px solid transparent;
+  border-radius: 200px;
+  background: white;
+}
+main .section-1 .section-1-right {
+  height: 100%;
+}
+main .section-1 .section-1-right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=index.css.map */

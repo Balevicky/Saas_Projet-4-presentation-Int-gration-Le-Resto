@@ -1,0 +1,85 @@
+main {
+
+    .section-1 {
+        height: 430px;
+        max-height: 450px;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 40px;
+        margin: 0px 0 40px;
+        background: $white1;
+
+        .section-1-left {
+            padding: 10px;
+            height: 100%;
+
+            .section-1-left-container {
+                height: 100%;
+                border: 3px dotted $color1;
+                color: $black;
+                text-align: center;
+
+                // @include centerchild;
+                // img {}
+
+
+                // H3 {
+                //     @include title
+                // }
+
+                .disco-mini {
+                    padding-top: 10px;
+                    color: $color2;
+                    font-family: $font1;
+                    font-size: 2rem;
+                    // top: 15px;
+                    // position: relative;
+                }
+
+                .our-store-mini {
+                    @include title;
+                    margin: 20px;
+                    bottom: 35px;
+                    position: relative;
+
+                }
+
+                div {
+
+                    bottom: 35px;
+                    position: relative;
+
+                    p {
+                        margin: 10px 0;
+
+                    }
+
+                    #imgplate {
+                        width: 100px;
+                        height: 100px;
+                        border: 1px solid transparent;
+                        border-radius: 200px;
+                        background: $white;
+
+                    }
+
+                    // ==
+                }
+
+            }
+        }
+
+        .section-1-right {
+            height: 100%;
+
+            img {
+                // height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
