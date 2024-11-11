@@ -85,7 +85,7 @@ header h3 {
   font-size: 3.5rem;
   text-align: center;
   padding: 125px 0 0;
-  color: rgba(245, 170, 8, 0.685);
+  color: rgba(155, 118, 40, 0.685);
   position: relative;
   top: 40px;
   left: 0px;
@@ -118,7 +118,7 @@ header p {
 }
 
 main .section-1 {
-  height: 430px;
+  height: 450px;
   max-height: 450px;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -133,13 +133,13 @@ main .section-1 .section-1-left {
 }
 main .section-1 .section-1-left .section-1-left-container {
   height: 100%;
-  border: 3px dotted rgba(231, 179, 65, 0.24);
+  border: 2px dotted rgba(155, 118, 40, 0.685);
   color: black;
   text-align: center;
 }
 main .section-1 .section-1-left .section-1-left-container .disco-mini {
-  padding-top: 10px;
-  color: rgba(245, 170, 8, 0.685);
+  padding-top: 30px;
+  color: rgba(155, 118, 40, 0.685);
   font-family: Allura_Regular, sans-serif;
   font-size: 2rem;
 }
@@ -148,28 +148,121 @@ main .section-1 .section-1-left .section-1-left-container .our-store-mini {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 20px;
-  bottom: 35px;
+  bottom: 30px;
   position: relative;
 }
 main .section-1 .section-1-left .section-1-left-container div {
-  bottom: 35px;
+  bottom: 30px;
   position: relative;
 }
 main .section-1 .section-1-left .section-1-left-container div p {
   margin: 10px 0;
+  padding: 0 15px;
+  font-size: 1.1rem;
+  padding: 10px 0 20px;
 }
 main .section-1 .section-1-left .section-1-left-container div #imgplate {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border: 1px solid transparent;
-  border-radius: 200px;
+  border-radius: 150px;
   background: white;
+}
+main .section-1 .section-1-left .section-1-left-container div h4 {
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+main .section-1 .section-1-left .section-1-left-container div h5 {
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gray;
+  font-size: 0.6rem;
 }
 main .section-1 .section-1-right {
   height: 100%;
 }
 main .section-1 .section-1-right img {
+  height: 450px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: flex;
+  justify-content: space-around;
+}
+main .section-2 {
+  margin: 22% 0 0;
+  background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
+  height: 80vh;
+}
+main .section-2 .section-2-container {
+  height: 130%;
+  width: 50%;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  bottom: 50%;
+  margin: 0 auto;
+}
+main .section-2 .section-2-container .section-2-container-up {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .section-2 .section-2-container .section-2-container-up h3 {
+  font-family: Allura_Regular, sans-serif;
+  letter-spacing: 2px;
+  color: rgba(243, 134, 46, 0.767);
+  font-size: 2rem;
+}
+main .section-2 .section-2-container .section-2-container-up img {
+  padding: 30px 0 10px;
+}
+main .section-2 .section-2-container .section-2-container-up .mini-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+main .section-2 .section-2-container .section-2-container-up .mini-menu li {
+  position: relative;
+}
+main .section-2 .section-2-container .section-2-container-up .mini-menu li::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: -6px;
+  left: 0px;
+}
+main .section-2 .section-2-container .section-2-container-down {
+  border-top: 3px solid rgba(243, 134, 46, 0.767);
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: black;
+}
+main .section-2 .section-2-container .section-2-container-down .item {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 30% 55% 15%;
+  align-items: center;
+  border-bottom: 1px dotted rgb(201, 200, 200);
+}
+main .section-2 .section-2-container .section-2-container-down .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90px;
+  width: 90px;
+  border-radius: 150px;
+}
+main .section-2 .section-2-container .section-2-container-down .item h4,
+main .section-2 .section-2-container .section-2-container-down .item p {
+  font-size: 0.8rem;
+}
+main .section-2 .section-2-container .section-2-container-down .item span {
+  color: rgba(155, 118, 40, 0.685);
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
