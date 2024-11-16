@@ -280,7 +280,7 @@ main .section-3 {
 }
 main .section-3 .section-3-left {
   background: black;
-  height: 100%;
+  height: 60vh;
   width: 100%;
   color: white;
   display: flex;
@@ -289,7 +289,6 @@ main .section-3 .section-3-left {
 }
 main .section-3 .section-3-left .section-3-left-container {
   border: 1px dotted white;
-  height: 95%;
   width: 100%;
   margin: 10px;
   text-align: center;
@@ -323,4 +322,83 @@ main .section-3 .section-3-left .section-3-left-container p {
   color: rgba(155, 118, 40, 0.685);
   font-weight: 700;
   padding-top: 45px;
+}
+main .section-3 .section-3-right {
+  height: 60vh;
+  width: 100%;
+  background: rgba(247, 244, 244, 0.966);
+}
+main .section-3 .section-3-right .section-3-right-container {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+main .section-3 .section-3-right .section-3-right-container h3 {
+  font-family: Allura_Regular, sans-serif;
+  color: rgba(155, 118, 40, 0.685);
+  font-size: 3rem;
+}
+main .section-3 .section-3-right .section-3-right-container h2 {
+  font-family: Allura_Regular, sans-serif;
+  color: black;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  position: relative;
+  bottom: 15px;
+}
+main .section-3 .section-3-right .section-3-right-container img {
+  padding: 35px 0;
+}
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1FR);
+  grid-template-rows: repeat(2, 1FR);
+}
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping select,
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping input {
+  height: 45px;
+  border: hidden;
+  background: transparent;
+  border-bottom: 1px solid rgb(180, 179, 179);
+  color: gray;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping select:focus,
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping input:focus {
+  border: 1px solid skyblue;
+}
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping select:focus,
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping input:focus {
+  border: 1px solid skyblue;
+}
+main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping select, main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping input[type=date] {
+  color: black;
+}
+main .section-3 .section-3-right .section-3-right-container .button {
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: 45px;
+  font-family: Poppins_Medium, sans-serif;
+  height: 70px;
+  width: 250px;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  letter-spacing: 3px;
+  background: black;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .section-3 .section-3-right .section-3-right-container .button:hover {
+  background: rgba(247, 244, 244, 0.966);
+  color: black;
 }/*# sourceMappingURL=index.css.map */

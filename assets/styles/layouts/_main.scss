@@ -195,70 +195,161 @@ main {
                 }
             }
         }
+    }
+
+    //===================== section 3 =====================
+    .section-3 {
+        width: 70%;
+        height: 60vh;
+        background: $white;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        color: $black;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        .section-3-left {
+
+            background: $black;
+            height: 60vh;
+            width: 100%;
+            color: $white;
+            @include centerchild;
+
+            .section-3-left-container {
+                border: 1px dotted $white;
+                // height: 95%;
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                padding: 20px 0;
+
+
+                h4 {
+                    font-family: $font1;
+                    color: $color2;
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    @include title;
+                    bottom: 15px;
+                    position: relative;
+
+                }
+
+
+                h3 {
+                    color: $color2;
+                    @include title;
+                    // text-align: center;
+                    padding: 40px 0 10px;
+                }
+
+                h5 {
+                    // text-align: center;
+                    font-size: 0.9rem;
+                    letter-spacing: 2px;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: $color2;
+                    font-weight: 700;
+                    padding-top: 45px;
+                }
+            }
         }
 
-        //===================== section 3 =====================
-        .section-3 {
-            width: 70%;
+        //======================== Section-3-right =================
+        .section-3-right {
+
             height: 60vh;
-            background: $white;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 30% 70%;
-            color: $black;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
+            width: 100%;
+            background: $white1;
 
-            .section-3-left {
-
-                background: $black;
-                height: 100%;
+            // @include centerchild;
+            .section-3-right-container {
                 width: 100%;
-                color: $white;
-                @include centerchild;
+                margin: 30px 0;
+                text-align: center;
 
-                .section-3-left-container {
-                    border: 1px dotted $white;
-                    height: 95%;
-                    width: 100%;
-                    margin: 10px;
-                    text-align: center;
-                    padding: 20px 0;
+                h3 {
+                    font-family: $font1;
+                    color: $color2;
+                    font-size: 3rem;
+                }
 
-                  
-                    h4{
-                        font-family: $font1;
-                        color: $color2;
-                        font-size: 3rem;
+                h2 {
+                    font-family: $font1;
+                    color: $black;
+                    @include title;
+                    font-size: 2rem;
+                    position: relative;
+                    bottom: 15px;
+                }
+                img{
+                    // font-size: 10rem;
+                    padding: 35px 0;
+                }
+                // form{
+                //     height: 60%;
+                // }
+                .section-3-right-container-taping{
+                    width: 80%;
+                    height: 50%;
+                    margin: 0 auto 40px;
+                    display: grid;
+                    gap: 20px;
+                    grid-template-columns: repeat(3, 1FR);
+                    grid-template-rows: repeat(2, 1FR);
+
+                    select,
+                    input{
+                        height: 45px;
+                        border: hidden;
+                        background: transparent;
+                        border-bottom: 1px solid rgb(180, 179, 179);
+                        color: gray;
+                        font-family: $font2;
+                        text-transform:capitalize;
+                        font-size: 1rem;
+                        &:focus{
+                            border: 1px solid skyblue;
+                        }
+                        &:focus{
+                            border: 1px solid skyblue;
+                        }
                     }
-                    h2{
-                        @include title;
-                        bottom: 15px;
-                        position: relative;
-                        
-                    }
-
-
-                    h3 {
-                        color: $color2;
-                        @include title;
-                        // text-align: center;
-                        padding: 40px 0 10px;
-                    }
-
-                    h5 {
-                        // text-align: center;
-                        font-size: 0.9rem;
-                        letter-spacing: 2px;
-                    }
-                    p{
-                        font-size: 1.5rem;
-                        color: $color2;
-                        font-weight: 700;
-                        padding-top: 45px;
+                     select,input[type="date"]{
+                        color: $black;
+                       
+                     }
+                    
+                }
+                .button{
+                    border: 1px solid rgb(180, 179, 179);
+                    border-radius: 45px;
+                    font-family: $font2;
+                    height: 70px;
+                    width: 250px;
+                    @include title;
+                    letter-spacing: 3px;
+                    background: $black;
+                    color: $white;
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover{
+                       background: $white1; 
+                       color:$black ;
                     }
                 }
             }
         }
+
+        //======================== Section-3-right =================
     }
+}
