@@ -258,11 +258,69 @@ main .section-2 .section-2-container .section-2-container-down .item img {
   width: 90px;
   border-radius: 150px;
 }
-main .section-2 .section-2-container .section-2-container-down .item h4,
-main .section-2 .section-2-container .section-2-container-down .item p {
+main .section-2 .section-2-container .section-2-container-down .item img h4,
+main .section-2 .section-2-container .section-2-container-down .item img p {
   font-size: 0.8rem;
 }
-main .section-2 .section-2-container .section-2-container-down .item span {
+main .section-2 .section-2-container .section-2-container-down .item img span {
   color: rgba(155, 118, 40, 0.685);
   font-weight: 700;
+}
+main .section-3 {
+  width: 70%;
+  height: 60vh;
+  background: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  color: black;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+main .section-3 .section-3-left {
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section-3 .section-3-left .section-3-left-container {
+  border: 1px dotted white;
+  height: 95%;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  padding: 20px 0;
+}
+main .section-3 .section-3-left .section-3-left-container h4 {
+  font-family: Allura_Regular, sans-serif;
+  color: rgba(155, 118, 40, 0.685);
+  font-size: 3rem;
+}
+main .section-3 .section-3-left .section-3-left-container h2 {
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: 15px;
+  position: relative;
+}
+main .section-3 .section-3-left .section-3-left-container h3 {
+  color: rgba(155, 118, 40, 0.685);
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 40px 0 10px;
+}
+main .section-3 .section-3-left .section-3-left-container h5 {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+main .section-3 .section-3-left .section-3-left-container p {
+  font-size: 1.5rem;
+  color: rgba(155, 118, 40, 0.685);
+  font-weight: 700;
+  padding-top: 45px;
 }/*# sourceMappingURL=index.css.map */

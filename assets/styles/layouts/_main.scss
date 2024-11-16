@@ -55,30 +55,32 @@ main {
                     p {
                         margin: 10px 0;
                         padding: 0 15px;
-                            font-size: 1.1rem;
-                            padding: 10px 0 20px;
+                        font-size: 1.1rem;
+                        padding: 10px 0 20px;
 
                     }
 
                     #imgplate {
                         width: 70px;
-                            height: 70px;
+                        height: 70px;
                         border: 1px solid transparent;
                         border-radius: 150px;
                         background: $white;
                     }
-                    h4{
+
+                    h4 {
                         font-size: 0.9rem;
-                        padding-top:10px; 
+                        padding-top: 10px;
 
                     }
-                    h5{
+
+                    h5 {
                         @include title;
                         color: $color4;
                         font-size: 0.6rem;
 
                     }
-   }
+                }
             }
         }
 
@@ -87,114 +89,176 @@ main {
 
             img {
                 height: 450px;
-                    width: 100%;
-                    object-fit: cover;
+                width: 100%;
+                object-fit: cover;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    // ================section 2=================
+    .section-2 {
+        margin: 22% 0 0;
+        background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
+        height: 80vh;
+
+        // position: relative;
+        .section-2-container {
+            height: 130%;
+            width: 50%;
+            // background: blueviolet;
+            // $white
+            display: grid;
+            grid-template-rows: 20% 80%;
+
+
+            position: relative;
+            bottom: 50%;
+            margin: 0 auto;
+
+            .section-2-container-up {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+
+
+                h3 {
+                    @include title1;
+                    color: $color3;
+                    font-size: 2rem;
+                }
+
+                img {
+                    padding: 30px 0 10px;
+                }
+
+                .mini-menu {
                     display: flex;
-                    justify-content: space-around;
-                }
-                }
-                }
-                
-                // ================section 2=================
-                .section-2 {
-                    margin: 22% 0 0;
-                    background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
-                    height: 80vh;
-                
-                    // position: relative;
-                    .section-2-container {
-                        height: 130%;
-                        width: 50%;
-                        // background: blueviolet;
-                        // $white
-                        display: grid;
-                        grid-template-rows: 20% 80%;
-                
-                
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+
+                    li {
                         position: relative;
-                        bottom: 50%;
-                        margin: 0 auto;
-                
-                        .section-2-container-up {
-                            width: 90%;
-                            margin: 0 auto;
-                            text-align: center;
-                
-                
-                            h3 {
-                                @include title1;
-                                color: $color3;
-                                font-size: 2rem;
-                            }
-                
-                            img {
-                                padding: 30px 0 10px;
-                            }
-                
-                            .mini-menu {
-                                display: flex;
-                                justify-content: space-evenly;
-                                align-items: center;
-                                position: relative;
-                
-                                li {
-                                    position: relative;
-                
-                                    &::after {
-                                        content: "";
-                                        height: 1px;
-                                        width: 100%;
+
+                        &::after {
+                            content: "";
+                            height: 1px;
+                            width: 100%;
                             // background: blue;
-                                background: $white;
-                                position: absolute;
-                                bottom: -6px;
-                                left: 0px;
-                            
-                            
-                            }
-                            }
-                            }
-                            }
-                            
-                            .section-2-container-down {
-                            
-                                border-top: 3px solid $color3;
-                                background: $white;
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-template-rows: repeat(4, 1fr);
-                                color: $black;
-                            
-                                .item {
-                                    margin: 15px;
-                                    display: grid;
-                                    grid-template-columns: 30% 55% 15%;
-                                  
-                                    align-items: center;
-                                    border-bottom: 1px dotted rgb(201, 200, 200);
-                            
-                                    img {
+                            background: $white;
+                            position: absolute;
+                            bottom: -6px;
+                            left: 0px;
+
+
+                        }
+                    }
+                }
+            }
+
+            .section-2-container-down {
+
+                border-top: 3px solid $color3;
+                background: $white;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                color: $black;
+
+                .item {
+                    margin: 15px;
+                    display: grid;
+                    grid-template-columns: 30% 55% 15%;
+
+                    align-items: center;
+                    border-bottom: 1px dotted rgb(201, 200, 200);
+
+                    img {
                         object-fit: cover;
                         height: 90px;
-                            width: 90px;
-                            border-radius: 150px;
-                                 }
-                        
+                        width: 90px;
+                        border-radius: 150px;
+
                         h4,
                         p {
                             font-size: 0.8rem;
                         }
-                        
+
                         span {
                             color: $color2;
-                                // color: red;
+                            // color: red;
                             font-weight: 700;
                         }
+                    }
+                }
+            }
+        }
+        }
+
+        //===================== section 3 =====================
+        .section-3 {
+            width: 70%;
+            height: 60vh;
+            background: $white;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            color: $black;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+
+            .section-3-left {
+
+                background: $black;
+                height: 100%;
+                width: 100%;
+                color: $white;
+                @include centerchild;
+
+                .section-3-left-container {
+                    border: 1px dotted $white;
+                    height: 95%;
+                    width: 100%;
+                    margin: 10px;
+                    text-align: center;
+                    padding: 20px 0;
+
+                  
+                    h4{
+                        font-family: $font1;
+                        color: $color2;
+                        font-size: 3rem;
+                    }
+                    h2{
+                        @include title;
+                        bottom: 15px;
+                        position: relative;
                         
-                        
-                        
-                        }
+                    }
+
+
+                    h3 {
+                        color: $color2;
+                        @include title;
+                        // text-align: center;
+                        padding: 40px 0 10px;
+                    }
+
+                    h5 {
+                        // text-align: center;
+                        font-size: 0.9rem;
+                        letter-spacing: 2px;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                        color: $color2;
+                        font-weight: 700;
+                        padding-top: 45px;
+                    }
+                }
             }
         }
     }
- }
