@@ -1,354 +1,470 @@
 main {
+  .section-1 {
+    height: 450px;
+    max-height: 450px;
 
-    .section-1 {
-        height: 450px;
-        max-height: 450px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 40px;
+    margin: 0px 0 40px;
+    background: $white1;
 
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-content: center;
-        align-items: center;
-        // margin-bottom: 40px;
-        margin: 0px 0 40px;
-        background: $white1;
+    .section-1-left {
+      padding: 10px;
+      height: 100%;
 
-        .section-1-left {
-            padding: 10px;
-            height: 100%;
-
-            .section-1-left-container {
-                height: 100%;
-                border: 2px dotted $color2;
-                color: $black;
-                text-align: center;
-
-                // @include centerchild;
-                // img {}
-
-
-                // H3 {
-                //     @include title
-                // }
-
-                .disco-mini {
-                    padding-top: 30px;
-                    color: $color2;
-                    font-family: $font1;
-                    font-size: 2rem;
-                    // top: 15px;
-                    // position: relative;
-                }
-
-                .our-store-mini {
-                    @include title;
-                    margin: 20px;
-                    bottom: 30px;
-                    position: relative;
-
-                }
-
-                div {
-
-                    bottom: 30px;
-                    position: relative;
-
-                    p {
-                        margin: 10px 0;
-                        padding: 0 15px;
-                        font-size: 1.1rem;
-                        padding: 10px 0 20px;
-
-                    }
-
-                    #imgplate {
-                        width: 70px;
-                        height: 70px;
-                        border: 1px solid transparent;
-                        border-radius: 150px;
-                        background: $white;
-                    }
-
-                    h4 {
-                        font-size: 0.9rem;
-                        padding-top: 10px;
-
-                    }
-
-                    h5 {
-                        @include title;
-                        color: $color4;
-                        font-size: 0.6rem;
-
-                    }
-                }
-            }
-        }
-
-        .section-1-right {
-            height: 100%;
-
-            img {
-                height: 450px;
-                width: 100%;
-                object-fit: cover;
-                display: flex;
-                justify-content: space-around;
-            }
-        }
-    }
-
-    // ================section 2=================
-    .section-2 {
-        margin: 22% 0 0;
-        background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
-        height: 80vh;
-
-        // position: relative;
-        .section-2-container {
-            height: 130%;
-            width: 50%;
-            // background: blueviolet;
-            // $white
-            display: grid;
-            grid-template-rows: 20% 80%;
-
-
-            position: relative;
-            bottom: 50%;
-            margin: 0 auto;
-
-            .section-2-container-up {
-                width: 90%;
-                margin: 0 auto;
-                text-align: center;
-
-
-                h3 {
-                    @include title1;
-                    color: $color3;
-                    font-size: 2rem;
-                }
-
-                img {
-                    padding: 30px 0 10px;
-                }
-
-                .mini-menu {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    position: relative;
-
-                    li {
-                        position: relative;
-
-                        &::after {
-                            content: "";
-                            height: 1px;
-                            width: 100%;
-                            // background: blue;
-                            background: $white;
-                            position: absolute;
-                            bottom: -6px;
-                            left: 0px;
-
-
-                        }
-                    }
-                }
-            }
-
-            .section-2-container-down {
-
-                border-top: 3px solid $color3;
-                background: $white;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 1fr);
-                color: $black;
-
-                .item {
-                    margin: 15px;
-                    display: grid;
-                    grid-template-columns: 30% 55% 15%;
-
-                    align-items: center;
-                    border-bottom: 1px dotted rgb(201, 200, 200);
-
-                    img {
-                        object-fit: cover;
-                        height: 90px;
-                        width: 90px;
-                        border-radius: 150px;
-
-                          }
-                        h4,p {
-                            font-size: 1.08rem;
-                        }
-
-                        span {
-                           color: $color2;
-                           // color: red;
-                            font-weight: 900;
-                        }
-                }
-            }
-        }
-    }
-
-    //===================== section 3 =====================
-    .section-3 {
-        width: 70%;
-        height: 60vh;
-        background: $white;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 30% 70%;
+      .section-1-left-container {
+        height: 100%;
+        border: 2px dotted $color2;
         color: $black;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+        text-align: center;
 
-        .section-3-left {
+        // @include centerchild;
+        // img {}
 
-            background: $black;
-            height: 60vh;
-            width: 100%;
-            color: $white;
-            @include centerchild;
+        // H3 {
+        //     @include title
+        // }
 
-            .section-3-left-container {
-                border: 1px dotted $white;
-                // height: 95%;
-                width: 100%;
-                margin: 10px;
-                text-align: center;
-                padding: 20px 0;
-
-
-                h4 {
-                    font-family: $font1;
-                    color: $color2;
-                    font-size: 3rem;
-                }
-
-                h2 {
-                    @include title;
-                    bottom: 15px;
-                    position: relative;
-
-                }
-
-
-                h3 {
-                    color: $color2;
-                    @include title;
-                    // text-align: center;
-                    padding: 40px 0 10px;
-                }
-
-                h5 {
-                    // text-align: center;
-                    font-size: 0.9rem;
-                    letter-spacing: 2px;
-                }
-
-                p {
-                    font-size: 1.5rem;
-                    color: $color2;
-                    font-weight: 700;
-                    padding-top: 45px;
-                }
-            }
+        .disco-mini {
+          padding-top: 30px;
+          color: $color2;
+          font-family: $font1;
+          font-size: 2rem;
+          // top: 15px;
+          // position: relative;
         }
 
-        //======================== Section-3-right =================
-        .section-3-right {
-
-            height: 60vh;
-            width: 100%;
-            background: $white1;
-
-            // @include centerchild;
-            .section-3-right-container {
-                width: 100%;
-                margin: 30px 0;
-                text-align: center;
-
-                h3 {
-                    font-family: $font1;
-                    color: $color2;
-                    font-size: 3rem;
-                }
-
-                h2 {
-                    font-family: $font1;
-                    color: $black;
-                    @include title;
-                    font-size: 2rem;
-                    position: relative;
-                    bottom: 15px;
-                }
-                img{
-                    // font-size: 10rem;
-                    padding: 35px 0;
-                }
-                // form{
-                //     height: 60%;
-                // }
-                .section-3-right-container-taping{
-                    width: 80%;
-                    height: 50%;
-                    margin: 0 auto 40px;
-                    display: grid;
-                    gap: 20px;
-                    grid-template-columns: repeat(3, 1FR);
-                    grid-template-rows: repeat(2, 1FR);
-
-                    select,
-                    input{
-                        height: 45px;
-                        border: hidden;
-                        background: transparent;
-                        border-bottom: 1px solid rgb(180, 179, 179);
-                        color: gray;
-                        font-family: $font2;
-                        text-transform:capitalize;
-                        font-size: 1rem;
-                        &:focus{
-                            border: 1px solid skyblue;
-                        }
-                        &:focus{
-                            border: 1px solid skyblue;
-                        }
-                    }
-                     select,input[type="date"]{
-                        color: $black;
-                       
-                     }
-                    
-                }
-                .button{
-                    border: 1px solid rgb(180, 179, 179);
-                    border-radius: 45px;
-                    font-family: $font2;
-                    height: 70px;
-                    width: 250px;
-                    @include title;
-                    letter-spacing: 3px;
-                    background: $black;
-                    color: $white;
-                    font-size: 1.3rem;
-                    cursor: pointer;
-                    transition: 0.5s;
-                    &:hover{
-                       background: $white1; 
-                       color:$black ;
-                    }
-                }
-            }
+        .our-store-mini {
+          @include title;
+          margin: 20px;
+          bottom: 30px;
+          position: relative;
         }
 
-        //======================== Section-3-right =================
+        div {
+          bottom: 30px;
+          position: relative;
+
+          p {
+            margin: 10px 0;
+            padding: 0 15px;
+            font-size: 1.1rem;
+            padding: 10px 0 20px;
+          }
+
+          #imgplate {
+            width: 70px;
+            height: 70px;
+            border: 1px solid transparent;
+            border-radius: 150px;
+            background: $white;
+          }
+
+          h4 {
+            font-size: 0.9rem;
+            padding-top: 10px;
+          }
+
+          h5 {
+            @include title;
+            color: $color4;
+            font-size: 0.6rem;
+          }
+        }
+      }
     }
+
+    .section-1-right {
+      height: 100%;
+
+      img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  // ================section 2=================
+  .section-2 {
+    margin: 22% 0 0;
+    background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
+    height: 80vh;
+
+    // position: relative;
+    .section-2-container {
+      height: 130%;
+      width: 50%;
+      // background: blueviolet;
+      // $white
+      display: grid;
+      grid-template-rows: 20% 80%;
+
+      position: relative;
+      bottom: 50%;
+      margin: 0 auto;
+
+      .section-2-container-up {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        h3 {
+          @include title1;
+          color: $color3;
+          font-size: 2rem;
+        }
+
+        img {
+          padding: 30px 0 10px;
+        }
+
+        .mini-menu {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          position: relative;
+
+          li {
+            position: relative;
+
+            &::after {
+              content: "";
+              height: 1px;
+              width: 100%;
+              // background: blue;
+              background: $white;
+              position: absolute;
+              bottom: -6px;
+              left: 0px;
+            }
+          }
+        }
+      }
+
+      .section-2-container-down {
+        border-top: 3px solid $color3;
+        background: $white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        color: $black;
+
+        .item {
+          margin: 15px;
+          display: grid;
+          grid-template-columns: 30% 55% 15%;
+          // grid-template-columns: 35% 50% 15%;;
+
+          align-items: center;
+          border-bottom: 1px dotted rgb(201, 200, 200);
+
+          img {
+            object-fit: cover;
+            height: 90px;
+            width: 90px;
+            border-radius: 150px;
+          }
+
+          h4,
+          p {
+            font-size: 0.7rem;
+            //padding-left: 15px;
+          }
+
+          span {
+            color: $color2;
+            // color: red;
+            // font-weight: 1500;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  //===================== section 3 =====================
+  .section-3 {
+    width: 70%;
+    height: 60vh;
+    background: $white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: $black;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    .section-3-left {
+      background: $black;
+      height: 60vh;
+      width: 100%;
+      color: $white;
+      @include centerchild;
+
+      .section-3-left-container {
+        border: 1px dotted $white;
+        // height: 95%;
+        width: 90%;
+        height: 57vh;
+        margin: 10px;
+        text-align: center;
+        padding: 20px 0;
+
+        // width: 100%;
+        // margin: 10px;
+        // text-align: center;
+        //padding: 20px 0;
+
+        h4 {
+          font-family: $font1;
+          color: $color2;
+          font-size: 3rem;
+        }
+
+        h2 {
+          @include title;
+          bottom: 15px;
+          position: relative;
+        }
+
+        h3 {
+          color: $color2;
+          @include title;
+          // text-align: center;
+          padding: 15px 0 10px;
+          font-size: 1.1rem;
+        }
+
+        h5 {
+          // text-align: center;
+          font-size: 0.7rem;
+          letter-spacing: 2px;
+        }
+
+        .lunch {
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          color: $color2;
+          font-weight: 700;
+          padding-top: 5px;
+        }
+      }
+    }
+
+    //======================== Section-3-right =================
+    .section-3-right {
+      height: 60vh;
+      width: 100%;
+      background: $white1;
+
+      // @include centerchild;
+      .section-3-right-container {
+        width: 90%;
+        margin: 30px auto 0;
+        text-align: center;
+
+        h3 {
+          font-family: $font1;
+          color: $color2;
+          font-size: 3rem;
+        }
+
+        h2 {
+          font-family: $font1;
+          color: $black;
+          @include title;
+          font-size: 2rem;
+          position: relative;
+          bottom: 15px;
+        }
+
+        img {
+          // font-size: 10rem;
+          padding: 15px 0;
+        }
+
+        // form{
+        //     height: 60%;
+        // }
+        .section-3-right-container-taping {
+          width: 80%;
+          height: 50%;
+          margin: 0 auto 40px;
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(3, 1FR);
+          grid-template-rows: repeat(2, 1FR);
+
+          select,
+          input {
+            height: 45px;
+            border: hidden;
+            background: transparent;
+            border-bottom: 1px solid rgb(180, 179, 179);
+            color: gray;
+            font-family: $font2;
+            text-transform: capitalize;
+            font-size: 1rem;
+
+            &:focus {
+              border: 1px solid skyblue;
+            }
+
+            &:focus {
+              border: 1px solid skyblue;
+            }
+          }
+
+          select,
+          input[type="date"] {
+            color: $black;
+          }
+        }
+
+        .button {
+          border: 1px solid rgb(180, 179, 179);
+          border-radius: 45px;
+          font-family: $font2;
+          height: 70px;
+          width: 250px;
+          margin-bottom: 10px;
+          @include title;
+          letter-spacing: 3px;
+          background: $black;
+          color: $white;
+          font-size: 1.3rem;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            background: $white1;
+            color: $black;
+          }
+        }
+      }
+    }
+
+    //======================== Section-3-right =================
+  }
+
+  //================================= section-4=============================
+  .section-4 {
+    width: 70%;
+    height: 80vh;
+    //background: $white;
+    margin: 60px auto;
+    text-align: center;
+
+    img {
+      /* object-fit: cover;
+      height: 120px;
+      width: 120px;*/
+    }
+
+    .section-4-up {
+      width: 100%;
+      //   background: $black;
+
+      h4 {
+        @include title1;
+        color: $color2;
+        font-size: 2rem;
+        position: relative;
+        top: 10px;
+        left: 0px;
+      }
+
+      h3 {
+        @include title;
+        font-size: 1.5rem;
+      }
+    }
+
+    .section-4-down {
+      display: grid;
+      grid-template-columns: 62% 37%;
+      // background: gray;
+      justify-content: start;
+      justify-items: start;
+      align-items: center;
+      text-align: start;
+      gap: 10px;
+
+      img {
+        //height: 100%;
+        width: 100%;
+      }
+      .section-4-down-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .section-4-down-left-up,
+        .section-4-down-left-down {
+          display: grid;
+          grid-template-columns: 40% 60%;
+          .section-4-down-left-up_containter-rigth,
+          .section-4-down-left-down_containter-rigth {
+            background: $white;
+            color: $black;
+            // @include centerchild;
+            //margin: 20px auto;
+            //text-align: center;
+            h5 {
+              margin: 15px;
+              padding: 20px 0;
+              font-size: 1.2rem;
+              color: $color4;
+            }
+            span {
+              margin: 15px;
+              color: gray;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      //========================= section-4-down-rigth section-4-down-rigth-container
+      .section-4-down-rigth {
+        width: 100%;
+        height: 100%;
+        /*img{
+                   //height: 100%;
+                    position: relative;
+                    top: 20PX;*/
+        ///  background: url(../../img/event-03.jpg) center/cover;
+        background: url(../../../assets/img/event-03.jpg) center/cover;
+        //background: red;
+        .Poligone {
+          clip-path: inset(14% 13% 13% 28%);
+          height: 100px;
+          width: 100px;
+          background: $white1;
+          color: black;
+          ::after{
+            content: 8 JulY;
+          }
+        }
+        .section-4-down-rigth-container {
+          background: $white1;
+          height: 90%;
+          width: 90%;
+          margin: 20px auto;
+          color: $black;
+        }
+      }
+    }
+  }
 }
+
+//================================= section-4=============================
