@@ -181,17 +181,16 @@ main {
                         width: 90px;
                         border-radius: 150px;
 
-                        h4,
-                        p {
-                            font-size: 0.8rem;
+                          }
+                        h4,p {
+                            font-size: 1.08rem;
                         }
 
                         span {
-                            color: $color2;
-                            // color: red;
-                            font-weight: 700;
+                           color: $color2;
+                           // color: red;
+                            font-weight: 900;
                         }
-                    }
                 }
             }
         }

@@ -258,13 +258,12 @@ main .section-2 .section-2-container .section-2-container-down .item img {
   width: 90px;
   border-radius: 150px;
 }
-main .section-2 .section-2-container .section-2-container-down .item img h4,
-main .section-2 .section-2-container .section-2-container-down .item img p {
-  font-size: 0.8rem;
+main .section-2 .section-2-container .section-2-container-down .item h4, main .section-2 .section-2-container .section-2-container-down .item p {
+  font-size: 1.08rem;
 }
-main .section-2 .section-2-container .section-2-container-down .item img span {
+main .section-2 .section-2-container .section-2-container-down .item span {
   color: rgba(155, 118, 40, 0.685);
-  font-weight: 700;
+  font-weight: 900;
 }
 main .section-3 {
   width: 70%;
