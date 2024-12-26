@@ -441,7 +441,7 @@ main {
           grid-template-columns: 40% 60%;
           .section-4-down-left-up_containter-rigth,
           .section-4-down-left-down_containter-rigth {
-            background: $white;
+            background: $white1;
             color: $black;
             span {
               margin: 15px;
@@ -450,7 +450,6 @@ main {
           //=======================section-4-down-left-up_containter-left
           .section-4-down-left-up_containter-left {
             background: url(../../../assets/img/event-01.jpg) center/cover;
-            
           }
           //=======================section-4-down-left-down_containter-left
           .section-4-down-left-down_containter-left {
@@ -465,7 +464,7 @@ main {
 
         background: url(../../../assets/img/event-03.jpg) center/cover;
         //background: red;
-      //========================section-4-down-rigth-container
+        //========================section-4-down-rigth-container
         .section-4-down-rigth-container {
           background: $white1;
           height: 90%;
@@ -476,14 +475,14 @@ main {
           h6 {
             text-align: center;
           }
-          
-            .resto {
-              margin-left: 35px;
-            }
-            .hour {
-              margin-left: 25px;
-            }
-        
+
+          .resto {
+            margin-left: 35px;
+          }
+          .hour {
+            margin-left: 25px;
+          }
+
           h6 {
             margin-top: 40px;
           }
@@ -496,6 +495,46 @@ main {
       }
     }
   }
+  //================================= section-5=============================
+  .section-5 {
+    margin: 22% 0 0;
+    background: url(../../../assets/img/gmap.jpg) center / cover;
+    height: 60vh;
+    .section-5-container {
+      background: $white1;
+      width: 70%;
+      height: 50vh;
+      margin: 0 auto;
+      position: relative;
+      top: -43%;
+      color: $black;
+      text-align: center;
+      .poho-chef{
+        width: 70px;
+        height: 70px;
+        border-radius:  300px;
+        background: url(../../../assets/img/avatar-02.jpg) center / cover;
+         //background: red;
+         position: relative;
+         top: -10%;
+         left: 47%;
+      }
+      p{
+       margin: 0 50px;
+        padding: 10px 0 30px;
+        font-size: 1.4rem;
+      line-height: 2.5rem;
+      }
+      h5{
+        font-size: 1.8em;
+        font-weight: 500;
+      }
+      h6{
+        font-size: 1.2em;
+        padding-top: 20px;
+        color: $color2;
+      }
+      
+    }
+  }
 }
-
-//================================= section-4=============================

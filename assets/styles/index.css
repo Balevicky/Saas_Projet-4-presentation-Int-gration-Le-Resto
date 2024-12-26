@@ -491,7 +491,7 @@ main .section-4 .section-4-down .section-4-down-left .section-4-down-left-up .se
 main .section-4 .section-4-down .section-4-down-left .section-4-down-left-up .section-4-down-left-down_containter-rigth,
 main .section-4 .section-4-down .section-4-down-left .section-4-down-left-down .section-4-down-left-up_containter-rigth,
 main .section-4 .section-4-down .section-4-down-left .section-4-down-left-down .section-4-down-left-down_containter-rigth {
-  background: white;
+  background: rgba(247, 244, 244, 0.966);
   color: black;
 }
 main .section-4 .section-4-down .section-4-down-left .section-4-down-left-up .section-4-down-left-up_containter-rigth span,
@@ -537,4 +537,43 @@ main .section-4 .section-4-down .section-4-down-rigth .section-4-down-rigth-cont
   color: white;
   top: 0;
   margin-bottom: 50px;
+}
+main .section-5 {
+  margin: 22% 0 0;
+  background: url(../../../assets/img/gmap.jpg) center/cover;
+  height: 60vh;
+}
+main .section-5 .section-5-container {
+  background: rgba(247, 244, 244, 0.966);
+  width: 70%;
+  height: 50vh;
+  margin: 0 auto;
+  position: relative;
+  top: -43%;
+  color: black;
+  text-align: center;
+}
+main .section-5 .section-5-container .poho-chef {
+  width: 70px;
+  height: 70px;
+  border-radius: 300px;
+  background: url(../../../assets/img/avatar-02.jpg) center/cover;
+  position: relative;
+  top: -10%;
+  left: 47%;
+}
+main .section-5 .section-5-container p {
+  margin: 0 50px;
+  padding: 10px 0 30px;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+main .section-5 .section-5-container h5 {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+main .section-5 .section-5-container h6 {
+  font-size: 1.2em;
+  padding-top: 20px;
+  color: rgba(155, 118, 40, 0.685);
 }/*# sourceMappingURL=index.css.map */
