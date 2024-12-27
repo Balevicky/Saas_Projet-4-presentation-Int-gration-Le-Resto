@@ -270,7 +270,7 @@ main .section-3 {
   width: 70%;
   height: 60vh;
   background: white;
-  margin: 0 auto;
+  margin: 100px auto 0;
   display: grid;
   grid-template-columns: 30% 70%;
   color: black;
@@ -539,9 +539,9 @@ main .section-4 .section-4-down .section-4-down-rigth .section-4-down-rigth-cont
   margin-bottom: 50px;
 }
 main .section-5 {
-  margin: 22% 0 0;
+  margin: 12% 0 0;
   background: url(../../../assets/img/gmap.jpg) center/cover;
-  height: 60vh;
+  height: 50vh;
 }
 main .section-5 .section-5-container {
   background: rgba(247, 244, 244, 0.966);
@@ -576,4 +576,69 @@ main .section-5 .section-5-container h6 {
   font-size: 1.2em;
   padding-top: 20px;
   color: rgba(155, 118, 40, 0.685);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 200px;
+}
+footer .footer-left {
+  background: rgba(0, 0, 0, 0.76);
+  padding: 30px 30px 30px 170px;
+}
+footer .footer-left h4 {
+  font-family: Allura_Regular, sans-serif;
+  letter-spacing: 2px;
+  color: rgba(155, 118, 40, 0.685);
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+footer .footer-left p {
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+}
+footer .footer-rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 50px;
+}
+footer .footer-rigth form {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-rigth form label {
+  text-transform: uppercase;
+  font-family: Poppins_Medium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+}
+footer .footer-rigth form input {
+  background: transparent;
+  width: 180px;
+  height: 30px;
+  margin-bottom: 20px;
+  color: rgba(247, 244, 244, 0.966);
+  background: transparent;
+  border: 1px solid gray;
+}
+footer .footer-rigth form input::-moz-placeholder {
+  padding-left: 10px;
+}
+footer .footer-rigth form input::placeholder {
+  padding-left: 10px;
+}
+footer .footer-rigth .Follow {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+}
+footer .footer-rigth .Follow ul {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */

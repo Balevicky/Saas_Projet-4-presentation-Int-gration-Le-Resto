@@ -1,0 +1,63 @@
+footer {
+  //==================== footer=========================
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 200px;
+  .footer-left {
+    background: $black1;
+    padding: 30px 30px 30px 170px;
+    h4 {
+      @include title1;
+      color: $color2;
+      font-size: 2rem;
+      padding-bottom: 15px;
+    }
+    p {
+      line-height: 2rem;
+      letter-spacing: 0.5px;
+    }
+  }
+  .footer-rigth {
+    // @include centerchild;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        text-transform: uppercase;
+        @include title;
+        padding-bottom: 5px;
+        font-size: 0.8rem;
+      }
+      input {
+        background: transparent;
+        width: 180px;
+        height: 30px;
+        margin-bottom: 20px;
+        color: $white1;
+        background: transparent;
+        border: 1px solid $color4;
+
+        &::placeholder {
+          padding-left: 10px;
+        }
+      }
+    }
+    .Follow {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 0.8rem;
+      ul {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+  //==================== footer=========================
+}
