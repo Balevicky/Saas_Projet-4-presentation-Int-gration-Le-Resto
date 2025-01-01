@@ -50,6 +50,11 @@ header nav h4 {
   font-size: 2rem;
   padding: 20px 0;
 }
+@media screen and (max-width: 950px) {
+  header nav h4 {
+    font-size: 1.7rem;
+  }
+}
 header nav .nav-left {
   display: flex;
   align-items: center;
@@ -71,6 +76,11 @@ header nav .nav-left li:hover {
   color: black;
   background: white;
 }
+@media screen and (max-width: 950px) {
+  header nav .nav-left li {
+    font-size: 0.7rem;
+  }
+}
 header nav .nav-right {
   display: flex;
   align-items: center;
@@ -79,6 +89,11 @@ header nav .nav-right {
 header nav .nav-right li:hover {
   cursor: pointer;
   color: blue;
+}
+@media screen and (max-width: 950px) {
+  header nav .nav-right li {
+    font-size: 0.7rem;
+  }
 }
 header h3 {
   font-family: Allura_Regular, sans-serif;
@@ -100,6 +115,11 @@ header h1 {
   text-align: center;
   margin-top: 0;
   font-weight: 10;
+}
+@media screen and (max-width: 950px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
 }
 header img {
   position: relative;
@@ -143,6 +163,11 @@ main .section-1 .section-1-left .section-1-left-container .disco-mini {
   font-family: Allura_Regular, sans-serif;
   font-size: 2rem;
 }
+@media screen and (max-width: 950px) {
+  main .section-1 .section-1-left .section-1-left-container .disco-mini {
+    padding-top: 10px;
+  }
+}
 main .section-1 .section-1-left .section-1-left-container .our-store-mini {
   font-family: Poppins_Medium, sans-serif;
   text-transform: uppercase;
@@ -160,6 +185,12 @@ main .section-1 .section-1-left .section-1-left-container div p {
   padding: 0 15px;
   font-size: 1.1rem;
   padding: 10px 0 20px;
+}
+@media screen and (max-width: 950px) {
+  main .section-1 .section-1-left .section-1-left-container div p {
+    font-size: 0.8rem;
+    padding: 5px 0 5px;
+  }
 }
 main .section-1 .section-1-left .section-1-left-container div #imgplate {
   width: 70px;
@@ -191,9 +222,14 @@ main .section-1 .section-1-right img {
   justify-content: space-around;
 }
 main .section-2 {
-  margin: 22% 0 0;
+  margin: 30% 0 0;
   background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
   height: 80vh;
+}
+@media screen and (max-width: 950px) {
+  main .section-2 {
+    margin: 60% 0 0;
+  }
 }
 main .section-2 .section-2-container {
   height: 130%;
@@ -203,6 +239,12 @@ main .section-2 .section-2-container {
   position: relative;
   bottom: 50%;
   margin: 0 auto;
+}
+@media screen and (max-width: 950px) {
+  main .section-2 .section-2-container {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 main .section-2 .section-2-container .section-2-container-up {
   width: 90%;
@@ -258,13 +300,32 @@ main .section-2 .section-2-container .section-2-container-down .item img {
   width: 90px;
   border-radius: 150px;
 }
+@media screen and (max-width: 950px) {
+  main .section-2 .section-2-container .section-2-container-down .item img {
+    height: 70px;
+    width: 70px;
+  }
+}
 main .section-2 .section-2-container .section-2-container-down .item h4,
 main .section-2 .section-2-container .section-2-container-down .item p {
   font-size: 0.7rem;
 }
+@media screen and (max-width: 950px) {
+  main .section-2 .section-2-container .section-2-container-down .item h4,
+  main .section-2 .section-2-container .section-2-container-down .item p {
+    font-size: 0.5rem;
+    padding-left: 9px;
+  }
+}
 main .section-2 .section-2-container .section-2-container-down .item span {
   color: rgba(155, 118, 40, 0.685);
   font-weight: bold;
+}
+@media screen and (max-width: 950px) {
+  main .section-2 .section-2-container .section-2-container-down .item span {
+    font-size: 0.8rem;
+    padding-left: 9px;
+  }
 }
 main .section-3 {
   width: 70%;
@@ -277,6 +338,11 @@ main .section-3 {
   justify-content: center;
   justify-items: center;
   align-items: center;
+}
+@media screen and (max-width: 950px) {
+  main .section-3 {
+    width: 80%;
+  }
 }
 main .section-3 .section-3-left {
   background: black;
@@ -299,6 +365,11 @@ main .section-3 .section-3-left .section-3-left-container h4 {
   font-family: Allura_Regular, sans-serif;
   color: rgba(155, 118, 40, 0.685);
   font-size: 3rem;
+}
+@media screen and (max-width: 950px) {
+  main .section-3 .section-3-left .section-3-left-container h4 {
+    font-size: 2rem;
+  }
 }
 main .section-3 .section-3-left .section-3-left-container h2 {
   font-family: Poppins_Medium, sans-serif;
@@ -343,6 +414,11 @@ main .section-3 .section-3-right .section-3-right-container h3 {
   color: rgba(155, 118, 40, 0.685);
   font-size: 3rem;
 }
+@media screen and (max-width: 950px) {
+  main .section-3 .section-3-right .section-3-right-container h3 {
+    font-size: 2.5rem;
+  }
+}
 main .section-3 .section-3-right .section-3-right-container h2 {
   font-family: Allura_Regular, sans-serif;
   color: black;
@@ -353,16 +429,21 @@ main .section-3 .section-3-right .section-3-right-container h2 {
   position: relative;
   bottom: 15px;
 }
+@media screen and (max-width: 950px) {
+  main .section-3 .section-3-right .section-3-right-container h2 {
+    font-size: 1.8rem;
+  }
+}
 main .section-3 .section-3-right .section-3-right-container img {
   padding: 15px 0;
 }
 main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping {
-  width: 80%;
+  width: 90%;
   height: 50%;
   margin: 0 auto 40px;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1FR);
+  gap: 10px;
+  grid-template-columns: 40% 30% 30%;
   grid-template-rows: repeat(2, 1FR);
 }
 main .section-3 .section-3-right .section-3-right-container .section-3-right-container-taping select,

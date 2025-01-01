@@ -1,5 +1,4 @@
 main {
- 
   .section-1 {
     height: 450px;
     max-height: 450px;
@@ -36,6 +35,9 @@ main {
           font-size: 2rem;
           // top: 15px;
           // position: relative;
+          @media screen and (max-width: 950px) {
+            padding-top: 10px;
+          }
         }
 
         .our-store-mini {
@@ -54,6 +56,10 @@ main {
             padding: 0 15px;
             font-size: 1.1rem;
             padding: 10px 0 20px;
+            @media screen and (max-width: 950px) {
+              font-size: 0.8rem;
+              padding: 5px 0 5px;
+            }
           }
 
           #imgplate {
@@ -93,10 +99,12 @@ main {
 
   // ================section 2=================
   .section-2 {
-    margin: 22% 0 0;
+    margin: 30% 0 0;
     background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
     height: 80vh;
-
+    @media screen and (max-width: 950px) {
+      margin: 60% 0 0;
+    }
     // position: relative;
     .section-2-container {
       height: 130%;
@@ -109,6 +117,10 @@ main {
       position: relative;
       bottom: 50%;
       margin: 0 auto;
+      @media screen and (max-width: 950px) {
+        width: 70%;
+        margin: 0 auto;
+      }
 
       .section-2-container-up {
         width: 90%;
@@ -170,12 +182,21 @@ main {
             height: 90px;
             width: 90px;
             border-radius: 150px;
+            @media screen and (max-width: 950px) {
+              height: 70px;
+              width: 70px;
+              //border-radius: 150px;
+            }
           }
 
           h4,
           p {
             font-size: 0.7rem;
             //padding-left: 15px;
+            @media screen and (max-width: 950px) {
+              font-size: 0.5rem;
+              padding-left: 9px;
+            }
           }
 
           span {
@@ -183,6 +204,10 @@ main {
             // color: red;
             // font-weight: 1500;
             font-weight: bold;
+            @media screen and (max-width: 950px) {
+              font-size: 0.8rem;
+              padding-left: 9px;
+            }
           }
         }
       }
@@ -201,7 +226,9 @@ main {
     justify-content: center;
     justify-items: center;
     align-items: center;
-
+    @media screen and (max-width: 950px) {
+      width: 80%;
+    }
     .section-3-left {
       background: $black;
       height: 60vh;
@@ -227,6 +254,9 @@ main {
           font-family: $font1;
           color: $color2;
           font-size: 3rem;
+          @media screen and (max-width: 950px) {
+            font-size: 2rem;
+          }
         }
 
         h2 {
@@ -278,6 +308,9 @@ main {
           font-family: $font1;
           color: $color2;
           font-size: 3rem;
+          @media screen and (max-width: 950px) {
+            font-size: 2.5rem;
+          }
         }
 
         h2 {
@@ -287,6 +320,9 @@ main {
           font-size: 2rem;
           position: relative;
           bottom: 15px;
+          @media screen and (max-width: 950px) {
+            font-size: 1.8rem;
+          }
         }
 
         img {
@@ -298,14 +334,17 @@ main {
         //     height: 60%;
         // }
         .section-3-right-container-taping {
-          width: 80%;
+          width: 90%;
           height: 50%;
           margin: 0 auto 40px;
           display: grid;
-          gap: 20px;
-          grid-template-columns: repeat(3, 1FR);
+          gap: 10px;
+          // grid-template-columns: repeat(3, 1FR);
+          grid-template-columns: 40% 30% 30%;
           grid-template-rows: repeat(2, 1FR);
-
+          @media screen and (max-width: 950px) {
+            
+          }
           select,
           input {
             height: 45px;
@@ -510,32 +549,31 @@ main {
       top: -43%;
       color: $black;
       text-align: center;
-      .poho-chef{
+      .poho-chef {
         width: 70px;
         height: 70px;
-        border-radius:  300px;
+        border-radius: 300px;
         background: url(../../../assets/img/avatar-02.jpg) center / cover;
-         //background: red;
-         position: relative;
-         top: -10%;
-         left: 47%;
+        //background: red;
+        position: relative;
+        top: -10%;
+        left: 47%;
       }
-      p{
-       margin: 0 50px;
+      p {
+        margin: 0 50px;
         padding: 10px 0 30px;
         font-size: 1.4rem;
-      line-height: 2.5rem;
+        line-height: 2.5rem;
       }
-      h5{
+      h5 {
         font-size: 1.8em;
         font-weight: 500;
       }
-      h6{
+      h6 {
         font-size: 1.2em;
         padding-top: 20px;
         color: $color2;
       }
-      
     }
   }
 }
