@@ -227,15 +227,20 @@ main {
     justify-items: center;
     align-items: center;
     @media screen and (max-width: 950px) {
-      width: 80%;
+      //width: 80%;
+      display: block;
+      height: 127vh;
     }
+
     .section-3-left {
       background: $black;
       height: 60vh;
       width: 100%;
       color: $white;
       @include centerchild;
-
+      @media screen and (max-width: 950px) {
+        height: 57vh;
+      }
       .section-3-left-container {
         border: 1px dotted $white;
         // height: 95%;
@@ -244,7 +249,9 @@ main {
         margin: 10px;
         text-align: center;
         padding: 20px 0;
-
+        @media screen and (max-width: 950px) {
+          height: 53vh;
+        }
         // width: 100%;
         // margin: 10px;
         // text-align: center;
@@ -297,13 +304,18 @@ main {
       height: 60vh;
       width: 100%;
       background: $white1;
-
+      @media screen and (max-width: 950px) {
+        padding-top: 10px;
+        height: 70vh;
+      }
       // @include centerchild;
       .section-3-right-container {
         width: 90%;
         margin: 30px auto 0;
         text-align: center;
-
+        @media screen and (max-width: 950px) {
+          height: 100%;
+        }
         h3 {
           font-family: $font1;
           color: $color2;
@@ -343,7 +355,8 @@ main {
           grid-template-columns: 40% 30% 30%;
           grid-template-rows: repeat(2, 1FR);
           @media screen and (max-width: 950px) {
-            
+            display: block;
+            margin: 0 auto 10px;
           }
           select,
           input {
@@ -355,6 +368,9 @@ main {
             font-family: $font2;
             text-transform: capitalize;
             font-size: 1rem;
+            @media screen and (max-width: 950px) {
+              width: 100%;
+            }
 
             &:focus {
               border: 1px solid skyblue;
@@ -390,6 +406,9 @@ main {
             background: $white1;
             color: $black;
           }
+          @media screen and (max-width: 950px) {
+            height: 50px;
+          }
         }
       }
     }
@@ -404,6 +423,9 @@ main {
     //background: $white;
     margin: 60px auto;
     text-align: center;
+    @media screen and (max-width: 950px) {
+      height: 135vh;
+    }
     .Poligone {
       width: 90px;
       height: 90px;
@@ -465,7 +487,9 @@ main {
       align-items: center;
       text-align: start;
       gap: 10px;
-
+      @media screen and (max-width: 950px) {
+        display: block;
+      }
       img {
         //height: 100%;
         width: 100%;
@@ -502,7 +526,12 @@ main {
         width: 100%;
         height: 100%;
 
+          
         background: url(../../../assets/img/event-03.jpg) center/cover;
+        @media screen and (max-width: 950px) {
+            height:45vh ;
+           // padding: 25px 0; 
+          }
         //background: red;
         //========================section-4-down-rigth-container
         .section-4-down-rigth-container {
@@ -511,6 +540,11 @@ main {
           width: 90%;
           margin: 25px auto;
           color: $black;
+
+          @media screen and (max-width: 950px) {
+            height: 90%;
+            //padding-top: 40px; 
+          }
           h5,
           h6 {
             text-align: center;
@@ -540,6 +574,9 @@ main {
     margin: 12% 0 0;
     background: url(../../../assets/img/gmap.jpg) center / cover;
     height: 50vh;
+    @media screen and (max-width: 950px) {
+         margin: 12px 0 0;   
+          }
     .section-5-container {
       background: $white1;
       width: 70%;
