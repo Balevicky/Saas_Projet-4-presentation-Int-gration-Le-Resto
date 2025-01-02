@@ -685,7 +685,7 @@ main .section-5 {
 }
 @media screen and (max-width: 950px) {
   main .section-5 {
-    margin: 12px 0 0;
+    margin: 20px 0 0;
   }
 }
 main .section-5 .section-5-container {
@@ -697,6 +697,11 @@ main .section-5 .section-5-container {
   top: -43%;
   color: black;
   text-align: center;
+}
+@media screen and (max-width: 950px) {
+  main .section-5 .section-5-container {
+    top: -30%;
+  }
 }
 main .section-5 .section-5-container .poho-chef {
   width: 70px;
@@ -712,6 +717,12 @@ main .section-5 .section-5-container p {
   padding: 10px 0 30px;
   font-size: 1.4rem;
   line-height: 2.5rem;
+}
+@media screen and (max-width: 950px) {
+  main .section-5 .section-5-container p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
 }
 main .section-5 .section-5-container h5 {
   font-size: 1.8em;
@@ -782,6 +793,12 @@ footer .footer-rigth .Follow {
   justify-content: space-around;
   align-items: center;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 950px) {
+  footer .footer-rigth .Follow {
+    font-size: 0.6rem;
+    grid-template-columns: 30% 70%;
+  }
 }
 footer .footer-rigth .Follow ul {
   display: flex;

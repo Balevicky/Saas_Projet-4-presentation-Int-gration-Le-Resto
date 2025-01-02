@@ -575,7 +575,7 @@ main {
     background: url(../../../assets/img/gmap.jpg) center / cover;
     height: 50vh;
     @media screen and (max-width: 950px) {
-         margin: 12px 0 0;   
+         margin: 20px 0 0;   
           }
     .section-5-container {
       background: $white1;
@@ -586,6 +586,9 @@ main {
       top: -43%;
       color: $black;
       text-align: center;
+       @media screen and (max-width: 950px) {
+         top: -30%;  
+          }
       .poho-chef {
         width: 70px;
         height: 70px;
@@ -601,6 +604,10 @@ main {
         padding: 10px 0 30px;
         font-size: 1.4rem;
         line-height: 2.5rem;
+        @media screen and (max-width: 950px) {
+        font-size: 1.1rem;
+        line-height: 2.2rem; 
+          }
       }
       h5 {
         font-size: 1.8em;

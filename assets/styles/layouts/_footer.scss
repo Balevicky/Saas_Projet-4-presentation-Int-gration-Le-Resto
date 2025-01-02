@@ -53,6 +53,10 @@ footer {
       justify-content: space-around;
       align-items: center;
       font-size: 0.8rem;
+       @media screen and (max-width: 950px) {
+           font-size: 0.6rem;
+            grid-template-columns: 30% 70%;
+          }
       ul {
         display: flex;
         justify-content: space-around;
