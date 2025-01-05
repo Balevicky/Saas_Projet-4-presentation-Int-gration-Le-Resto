@@ -4,6 +4,9 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 200px;
+     @media screen and (max-width: 773px) {
+      display: block;
+    }
   .footer-left {
     background: $black1;
     padding: 30px 30px 30px 170px;
@@ -16,6 +19,9 @@ footer {
     p {
       line-height: 2rem;
       letter-spacing: 0.5px;
+    }
+      @media screen and (max-width: 773px) {
+      display: none;
     }
   }
   .footer-rigth {
